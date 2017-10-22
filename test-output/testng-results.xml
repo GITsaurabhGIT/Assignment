@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="0" total="2" passed="2">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Default suite" duration-ms="125192" started-at="2017-10-19T18:15:56Z" finished-at="2017-10-19T18:18:02Z">
+    <groups>
+    </groups>
+    <test name="Default test" duration-ms="125192" started-at="2017-10-19T18:15:56Z" finished-at="2017-10-19T18:18:02Z">
+      <class name="TestScenario.firstproj">
+        <test-method status="PASS" signature="launchBrowser()[pri:0, instance:TestScenario.firstproj@1bce4f0a]" name="launchBrowser" is-config="true" duration-ms="27997" started-at="2017-10-19T23:45:56Z" finished-at="2017-10-19T23:46:24Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchBrowser -->
+        <test-method status="PASS" signature="loginPage()[pri:1, instance:TestScenario.firstproj@1bce4f0a]" name="loginPage" duration-ms="8364" started-at="2017-10-19T23:46:24Z" finished-at="2017-10-19T23:46:33Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginPage -->
+        <test-method status="PASS" signature="clickOnContact()[pri:2, instance:TestScenario.firstproj@1bce4f0a]" name="clickOnContact" duration-ms="88815" started-at="2017-10-19T23:46:33Z" finished-at="2017-10-19T23:48:02Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- clickOnContact -->
+      </class> <!-- TestScenario.firstproj -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
