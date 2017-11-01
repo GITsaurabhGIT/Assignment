@@ -5,8 +5,7 @@
     <classes>
       <class name="TestScenario.firstproj">
         <methods>
-          <include name="loginPage"/>
-          <include name="clickOnContact"/>
+          <include name="navigatingToRecord"/>
           <include name="launchBrowser"/>
         </methods>
       </class> <!-- TestScenario.firstproj -->
