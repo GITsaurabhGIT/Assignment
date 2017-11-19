@@ -3,6 +3,8 @@ package TestScenario;
 import java.util.Iterator;
 import java.util.Set;
 import java.util.concurrent.TimeUnit;
+import java.util.regex.Matcher;
+import java.util.regex.Pattern;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
@@ -37,7 +39,7 @@ public class New_Contact {
 	
 	public void last_Name(String lname)
 	{
-		driver.findElement(l_Name).sendKeys(lname+firstproj.random_num);
+		driver.findElement(l_Name).sendKeys(lname+Classic.random_num);
 	}
 	
 	public void save_Button()
@@ -88,4 +90,6 @@ public class New_Contact {
 		
 		
 	}
+	
+	
 }

@@ -4,41 +4,34 @@ import java.io.File;
 import java.io.IOException;
 import java.util.concurrent.TimeUnit;
 
-//import org.junit.Test;
 import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.chrome.ChromeDriver;
-import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.support.PageFactory;
-//import org.openqa.selenium.firefox.FirefoxDriver;
-//import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
 
-public class firstproj {
+public class dummmy {
 
-	public String baseUrl = "https://login.salesforce.com";
 	WebDriver driver;
 	String contactName=null;
 	
+	public dummmy(WebDriver driver)
+	{
+		this.driver = driver;
+	}
+	
 	//generating a unique random number
-	static double random_num_double = Math.random()*100 + 1;
-	static int random_num = (int)(random_num_double);
+	/*static double random_num_double = Math.random()*100 + 1;
+	static int random_num = (int)(random_num_double);*/
 	
 	@BeforeTest
 	public void launchBrowser()
 	{
-		ChromeOptions options = new ChromeOptions();
-		options.addArguments("--start-maximized");
-		System.setProperty("webdriver.chrome.driver","D://chromedriver.exe");
-		driver = new ChromeDriver(options);
-		//driver.manage().window().maximize();
-		 
-		driver.get(baseUrl);
-			
-	}
+		LaunchingBrowser lb = new LaunchingBrowser();
+		this.driver = lb.launchBrowser();
+	}	
 	
-	
-	@Test(priority = 1)
+		
+	/*@Test(priority = 1)
 	public void loginPage()
 	{
 		//LogIn logIn = new LogIn(driver);
@@ -78,31 +71,36 @@ public class firstproj {
 		driver.manage().timeouts().implicitlyWait(20, TimeUnit.MINUTES);
 	}
 	
-	String cName = null;
-	@Test(priority = 6)
+	String cName,id = null;
+	@Test(priority = 5)
 	public void read_Contact_Name()
 	{
 		Contact_View vc = new Contact_View(driver);
 		cName = vc.view_contact().toString();
+		vc.verifyingCname(random_num);
+		id = vc.extractURL();
+		driver.manage().timeouts().implicitlyWait(20, TimeUnit.MINUTES);
 	}
 	
-	@Test(priority = 7)
+	@Test(priority = 6)
 	public void writeInSheet() throws IOException
 	{
 		File file_path = new File("C:\\Users\\Provar\\Desktop\\Book1.xlsx");
 		WrittingValuesInExcel we = new WrittingValuesInExcel();
-		we.writeDataIntoExcel(file_path, "Sheet1", cName);
+		we.writeDataIntoExcel(file_path, "Sheet1", cName,id);
+		driver.manage().timeouts().implicitlyWait(20, TimeUnit.MINUTES);
 	}
 	
-	@Test(priority = 8)
+	@Test(priority = 7)
 	public void readFromExcel() throws IOException
 	{
 		File file_path = new File("C:\\Users\\Provar\\Desktop\\Book1.xlsx");
 		ReadingValuesFromExcel we = new ReadingValuesFromExcel();
 		contactName = we.excelRead(file_path, "Sheet1");
+		driver.manage().timeouts().implicitlyWait(20, TimeUnit.MINUTES);
 	}
 	
-	@Test(priority = 9)
+	@Test(priority = 8)
 	public void clickOnContact2()
 		{
 			HomePage contact = new HomePage(driver);
@@ -110,18 +108,54 @@ public class firstproj {
 			driver.manage().timeouts().implicitlyWait(20, TimeUnit.MINUTES);
 		}
 	
-	@Test(priority = 10)
+	@Test(priority = 9)
 	public void clickingGoforListView()
 	{
 		Contact_Home ch = new Contact_Home(driver);
 		ch.clickOnGo();
+		driver.manage().timeouts().implicitlyWait(20, TimeUnit.MINUTES);
 	}
 
-	@Test(priority = 11)
+	@Test(priority = 10)
 	public void navigatingToRecord()
 	{
 		listView lv = new listView(driver);
 		lv.navigatingToRecord(contactName);
+		driver.manage().timeouts().implicitlyWait(20, TimeUnit.MINUTES);
+	}
+	
+	@Test(priority = 11)
+	public void editPage()
+	{
+		Contact_View cv = new Contact_View(driver);
+		cv.clickEdit();
+		EditPage ep = new EditPage(driver);
+		ep.setfirstNameEdit("ContactEdited");
+		ep.clickSaveEdit();
+		driver.manage().timeouts().implicitlyWait(20, TimeUnit.MINUTES);
+	}
+	
+	@Test(priority = 12)
+	public void inlineEditPage()
+	{
+		InlineEdit ie = new InlineEdit(driver);
+		ie.titleDoubleClick();
+		ie.setTitle("TestTitle");
+		ie.inlineEditSave();
+		driver.manage().timeouts().implicitlyWait(20, TimeUnit.MINUTES);
+	}
+	
+	@Test(priority = 13)
+	public void uploadFile()
+	{
+		Contact_View cv = new Contact_View(driver);
+		cv.clickAttachFile();
+		UploadFile uf = new UploadFile(driver);
+		uf.upload();
+		uf.clickattach();
+		uf.clickDone();
+		driver.manage().timeouts().implicitlyWait(20, TimeUnit.MINUTES);
+
 	}
 	
 	
@@ -129,6 +163,5 @@ public class firstproj {
 	public void closeBrowser()
 	{
 		driver.close();
-	}
-	
+	}*/
 }

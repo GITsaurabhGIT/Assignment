@@ -22,7 +22,7 @@ import org.apache.poi.xssf.usermodel.XSSFWorkbook;
 
 public class WrittingValuesInExcel {
 	
-	public void writeDataIntoExcel(File file_path,String Sheetname,String value) throws IOException
+	public void writeDataIntoExcel(File file_path,String Sheetname,String value,String idVal) throws IOException
 	{	       
 			try {
 				FileInputStream input = new FileInputStream(file_path);
@@ -33,10 +33,12 @@ public class WrittingValuesInExcel {
 	        XSSFSheet sh = wb.getSheet(Sheetname);
 	        
 	        XSSFRow row = sh.createRow(0);
-	        
 	        XSSFCell cell = row.createCell(0);
-	        
 	        cell.setCellValue(value);
+	        
+	        XSSFRow row1 = sh.createRow(5);	        
+	        XSSFCell cell1 = row.createCell(5);	        
+	        cell1.setCellValue(idVal);
 	        
 	        FileOutputStream output = new FileOutputStream(file_path);
 	        

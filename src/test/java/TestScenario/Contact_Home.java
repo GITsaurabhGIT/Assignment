@@ -12,7 +12,7 @@ public class Contact_Home {
 		this.driver = driver;
 	}
 	
-	By click_New = By.xpath("//input[@name='new']");
+	By click_New = By.xpath("(//input[@name='new'])");
 	By go = By.name("go");
 	
 	public void clickNewButton()

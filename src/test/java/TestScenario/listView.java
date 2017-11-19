@@ -23,7 +23,7 @@ public class listView {
 	
 	public void navigatingToRecord(String value)
 	{
-		List<WebElement> listOfRecordsloc = driver.findElements(By.xpath("//table[@class='x-grid3-row-table']/tbody/tr//td[4]/div/a"));
+		List<WebElement> listOfRecordsloc = driver.findElements(By.xpath("//table[@class='x-grid3-row-table']/tbody//td[4]//a"));
 		
 		while(flag = true)
 		{
@@ -36,14 +36,24 @@ public class listView {
 			
 			if(value.contains(sub) && flag == true)
 			{ 
+				  try{
+					   Thread.sleep(5000);
+					  }catch (InterruptedException ie1) {
+					    ie1.printStackTrace();
+					  }
 				tempRecord.sendKeys(Keys.ENTER);
 				//driver.findElement(tempRecord).click(); 
 				flag = false;
 				break;
 			}
 		}
-			driver.findElement(next).click();
+			if (flag == true)
+			{ driver.findElement(next).click(); }
+			else 
+			{ break; }
 		}
 	}
+
+
 	
 }

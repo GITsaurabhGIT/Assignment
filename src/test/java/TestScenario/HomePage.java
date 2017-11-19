@@ -13,9 +13,21 @@ public class HomePage {
 	}
 	
 	By clickContact = By.id("Contact_Tab");
+	By clickExpandObjLight = By.xpath("//a[contains(@title,'More Tabs Menu')]/..");
+	By clickvf = By.xpath("//li[contains(@class,'visualForce')]/a");
 	
 	public void clickOnContact()
 	{
 		driver.findElement(clickContact).click();
+	}
+	
+	public void clickExpand()
+	{
+		driver.findElement(clickExpandObjLight).click();
+	}
+	
+	public void clickvf()
+	{
+		driver.findElement(clickvf).click();
 	}
 }

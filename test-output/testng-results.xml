@@ -1,90 +1,77 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="1" ignored="0" total="10" passed="9">
+<testng-results skipped="0" failed="0" ignored="0" total="14" passed="14">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="246464" started-at="2017-10-31T12:31:23Z" finished-at="2017-10-31T12:35:29Z">
+  <suite name="Default suite" duration-ms="215967" started-at="2017-11-19T17:19:27Z" finished-at="2017-11-19T17:23:02Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="246464" started-at="2017-10-31T12:31:23Z" finished-at="2017-10-31T12:35:29Z">
-      <class name="TestScenario.firstproj">
-        <test-method status="PASS" signature="launchBrowser()[pri:0, instance:TestScenario.firstproj@6ca8564a]" name="launchBrowser" is-config="true" duration-ms="14918" started-at="2017-10-31T18:01:23Z" finished-at="2017-10-31T18:01:38Z">
+    <test name="Default test" duration-ms="215967" started-at="2017-11-19T17:19:27Z" finished-at="2017-11-19T17:23:02Z">
+      <class name="TestScenario.Lightning">
+        <test-method status="PASS" signature="launchBrowser()[pri:0, instance:TestScenario.Lightning@1ddf84b8]" name="launchBrowser" is-config="true" duration-ms="11423" started-at="2017-11-19T22:49:27Z" finished-at="2017-11-19T22:49:38Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- launchBrowser -->
-        <test-method status="PASS" signature="loginPage()[pri:1, instance:TestScenario.firstproj@6ca8564a]" name="loginPage" duration-ms="3183" started-at="2017-10-31T18:01:38Z" finished-at="2017-10-31T18:01:41Z">
+        <test-method status="PASS" signature="loggingIn()[pri:1, instance:TestScenario.Lightning@1ddf84b8]" name="loggingIn" duration-ms="23005" started-at="2017-11-19T22:49:38Z" finished-at="2017-11-19T22:50:01Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- loginPage -->
-        <test-method status="PASS" signature="clickOnContact()[pri:2, instance:TestScenario.firstproj@6ca8564a]" name="clickOnContact" duration-ms="12384" started-at="2017-10-31T18:01:41Z" finished-at="2017-10-31T18:01:53Z">
+        </test-method> <!-- loggingIn -->
+        <test-method status="PASS" signature="navigatingToobject()[pri:2, instance:TestScenario.Lightning@1ddf84b8]" name="navigatingToobject" duration-ms="20324" started-at="2017-11-19T22:50:01Z" finished-at="2017-11-19T22:50:21Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- clickOnContact -->
-        <test-method status="PASS" signature="clickingNew()[pri:3, instance:TestScenario.firstproj@6ca8564a]" name="clickingNew" duration-ms="1327" started-at="2017-10-31T18:01:53Z" finished-at="2017-10-31T18:01:55Z">
+        </test-method> <!-- navigatingToobject -->
+        <test-method status="PASS" signature="clickNew()[pri:3, instance:TestScenario.Lightning@1ddf84b8]" name="clickNew" duration-ms="137" started-at="2017-11-19T22:50:21Z" finished-at="2017-11-19T22:50:21Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- clickingNew -->
-        <test-method status="PASS" signature="setValuesNewPage()[pri:4, instance:TestScenario.firstproj@6ca8564a]" name="setValuesNewPage" duration-ms="11520" started-at="2017-10-31T18:01:55Z" finished-at="2017-10-31T18:02:06Z">
+        </test-method> <!-- clickNew -->
+        <test-method status="PASS" signature="setValuesNewPage()[pri:4, instance:TestScenario.Lightning@1ddf84b8]" name="setValuesNewPage" duration-ms="38806" started-at="2017-11-19T22:50:21Z" finished-at="2017-11-19T22:51:00Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setValuesNewPage -->
-        <test-method status="PASS" signature="read_Contact_Name()[pri:6, instance:TestScenario.firstproj@6ca8564a]" name="read_Contact_Name" duration-ms="263" started-at="2017-10-31T18:02:06Z" finished-at="2017-10-31T18:02:07Z">
+        <test-method status="PASS" signature="read_Contact_Name()[pri:5, instance:TestScenario.Lightning@1ddf84b8]" name="read_Contact_Name" duration-ms="5120" started-at="2017-11-19T22:51:00Z" finished-at="2017-11-19T22:51:05Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- read_Contact_Name -->
-        <test-method status="PASS" signature="writeInSheet()[pri:7, instance:TestScenario.firstproj@6ca8564a]" name="writeInSheet" duration-ms="931" started-at="2017-10-31T18:02:07Z" finished-at="2017-10-31T18:02:08Z">
+        <test-method status="PASS" signature="writeInSheet()[pri:6, instance:TestScenario.Lightning@1ddf84b8]" name="writeInSheet" duration-ms="1023" started-at="2017-11-19T22:51:05Z" finished-at="2017-11-19T22:51:06Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- writeInSheet -->
-        <test-method status="PASS" signature="readFromExcel()[pri:8, instance:TestScenario.firstproj@6ca8564a]" name="readFromExcel" duration-ms="39" started-at="2017-10-31T18:02:08Z" finished-at="2017-10-31T18:02:08Z">
+        <test-method status="PASS" signature="readFromExcel()[pri:7, instance:TestScenario.Lightning@1ddf84b8]" name="readFromExcel" duration-ms="43" started-at="2017-11-19T22:51:06Z" finished-at="2017-11-19T22:51:06Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- readFromExcel -->
-        <test-method status="PASS" signature="clickOnContact2()[pri:9, instance:TestScenario.firstproj@6ca8564a]" name="clickOnContact2" duration-ms="637" started-at="2017-10-31T18:02:08Z" finished-at="2017-10-31T18:02:08Z">
+        <test-method status="PASS" signature="navigatingToObject2()[pri:8, instance:TestScenario.Lightning@1ddf84b8]" name="navigatingToObject2" duration-ms="20289" started-at="2017-11-19T22:51:06Z" finished-at="2017-11-19T22:51:27Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- clickOnContact2 -->
-        <test-method status="PASS" signature="clickingGoforListView()[pri:10, instance:TestScenario.firstproj@6ca8564a]" name="clickingGoforListView" duration-ms="1705" started-at="2017-10-31T18:02:08Z" finished-at="2017-10-31T18:02:10Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- clickingGoforListView -->
-        <test-method status="FAIL" signature="navigatingToRecord()[pri:11, instance:TestScenario.firstproj@6ca8564a]" name="navigatingToRecord" duration-ms="199491" started-at="2017-10-31T18:02:10Z" finished-at="2017-10-31T18:05:29Z">
-          <exception class="java.lang.NullPointerException">
-            <full-stacktrace>
-              <![CDATA[java.lang.NullPointerException
-	at TestScenario.listView.navigatingToRecord(listView.java:44)
-	at TestScenario.firstproj.navigatingToRecord(firstproj.java:124)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.lang.reflect.Method.invoke(Method.java:498)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:108)
-	at org.testng.internal.Invoker.invokeMethod(Invoker.java:661)
-	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:869)
-	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1193)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:126)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
-	at org.testng.TestRunner.privateRun(TestRunner.java:744)
-	at org.testng.TestRunner.run(TestRunner.java:602)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:380)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:375)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:340)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:289)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1301)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1226)
-	at org.testng.TestNG.runSuites(TestNG.java:1144)
-	at org.testng.TestNG.run(TestNG.java:1115)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:132)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:230)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:76)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.NullPointerException -->
+        </test-method> <!-- navigatingToObject2 -->
+        <test-method status="PASS" signature="navigatingToRecord()[pri:9, instance:TestScenario.Lightning@1ddf84b8]" name="navigatingToRecord" duration-ms="5342" started-at="2017-11-19T22:51:27Z" finished-at="2017-11-19T22:51:32Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- navigatingToRecord -->
-      </class> <!-- TestScenario.firstproj -->
+        <test-method status="PASS" signature="editPage()[pri:10, instance:TestScenario.Lightning@1ddf84b8]" name="editPage" duration-ms="1926" started-at="2017-11-19T22:51:32Z" finished-at="2017-11-19T22:51:34Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- editPage -->
+        <test-method status="PASS" signature="uploadFile()[pri:11, instance:TestScenario.Lightning@1ddf84b8]" name="uploadFile" duration-ms="11322" started-at="2017-11-19T22:51:34Z" finished-at="2017-11-19T22:51:45Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- uploadFile -->
+        <test-method status="PASS" signature="inlineEditPage()[pri:12, instance:TestScenario.Lightning@1ddf84b8]" name="inlineEditPage" duration-ms="34198" started-at="2017-11-19T22:51:45Z" finished-at="2017-11-19T22:52:20Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- inlineEditPage -->
+        <test-method status="PASS" signature="navigatingToobject3()[pri:13, instance:TestScenario.Lightning@1ddf84b8]" name="navigatingToobject3" duration-ms="30520" started-at="2017-11-19T22:52:20Z" finished-at="2017-11-19T22:52:50Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- navigatingToobject3 -->
+        <test-method status="PASS" signature="setVf()[pri:14, instance:TestScenario.Lightning@1ddf84b8]" name="setVf" duration-ms="12198" started-at="2017-11-19T22:52:50Z" finished-at="2017-11-19T22:53:02Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setVf -->
+        <test-method status="PASS" signature="closeBrowser()[pri:0, instance:TestScenario.Lightning@1ddf84b8]" name="closeBrowser" is-config="true" duration-ms="249" started-at="2017-11-19T22:53:02Z" finished-at="2017-11-19T22:53:02Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeBrowser -->
+      </class> <!-- TestScenario.Lightning -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

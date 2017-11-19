@@ -3,12 +3,19 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test name="Default test(failed)">
     <classes>
-      <class name="TestScenario.firstproj">
+      <class name="TestScenario.Classic">
         <methods>
+          <include name="editPage"/>
+          <include name="read_Contact_Name"/>
+          <include name="setVf"/>
           <include name="navigatingToRecord"/>
+          <include name="uploadFile"/>
+          <include name="inlineEditPage"/>
+          <include name="closeBrowser"/>
           <include name="launchBrowser"/>
+          <include name="clickOnContact3"/>
         </methods>
-      </class> <!-- TestScenario.firstproj -->
+      </class> <!-- TestScenario.Classic -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
